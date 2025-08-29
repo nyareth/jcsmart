@@ -7,6 +7,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
+    "start": "next start",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "db:auth": "bun src/lib/auth-db.ts",

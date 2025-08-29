@@ -202,21 +202,20 @@ const United24Banner: React.FC<United24BannerProps> = ({
               ${textColorClasses}
             `}
           >
-            Stand with Ukraine. Help fund drones, medkits, and victory. Every
-            dollar helps stop{" "}
+            School Store. Your school shopping list. Macbooks, iPads, Tablets and Mobile Phones. Available in the {" "}
             <Link
               className={`
                 underline underline-offset-4 transition-colors duration-200
                 hover:text-[#0057b7]
                 dark:hover:text-[#ffd700]
               `}
-              href="https://war.ukraine.ua/russia-war-crimes"
+              href="/products"
               rel="noopener noreferrer"
               target="_blank"
             >
-              russia's war crimes
+              students section.
             </Link>{" "}
-            and saves lives. Donate now, it matters.
+            Shop now. Limited Offer
           </p>
         </div>
 
@@ -227,13 +226,13 @@ const United24Banner: React.FC<United24BannerProps> = ({
           `}
         >
           <Link
-            aria-label="Donate to support Ukraine"
+            aria-label="Shop our school store"
             className={buttonClasses}
             href="https://u24.gov.ua"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Donate
+            Shop
           </Link>
 
           {showCloseButton && (

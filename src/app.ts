@@ -1,8 +1,8 @@
 export const SEO_CONFIG = {
   description:
-    "Relivator is a robust ecommerce template built with next.js and other modern technologies. It's designed for developers who want a fast, modern, and scalable foundation without reinventing the backend.",
-  fullName: "Relivator Next.js Template",
-  name: "Relivator",
+    "JC Smart Technologies - dealers in US gadgets and security systems",
+  fullName: "JC SMART TECHNOLOGIES - Home of USA Gadgets",
+  name: "JC Smart Technologies ",
   slogan: "Store which makes you happy.",
 };
 

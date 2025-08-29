@@ -33,7 +33,7 @@ const AdminPageClient: React.FC<AdminPageClientProps> = ({ initialData }) => {
   const handleMediaClick = useCallback(
     (item: GalleryMediaItem) => {
       const allUploads = initialData.flatMap((user) =>
-        user.uploads.map((upload: MediaUpload) => ({
+        (user.uploads ?? []).map((upload: MediaUpload) => ({
           desc: `Uploaded by ${user.name || "Unknown"} on ${new Date(upload.createdAt).toLocaleDateString()}`,
           id: upload.id,
           span: "md:col-span-1 md:row-span-2 sm:col-span-1 sm:row-span-2", // Default span value
