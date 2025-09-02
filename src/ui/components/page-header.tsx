@@ -15,18 +15,7 @@ function PageHeader({
   ...props
 }: PageHeaderProps) {
   return (
-    <Comp
-      className={cn(
-        "flex w-full flex-col items-center gap-2 text-center",
-        withPadding &&
-          `
-            py-4
-            md:py-8
-          `,
-        className,
-      )}
-      {...props}
-    >
+    <Comp className={cn("flex w-full flex-col items-center gap-2 text-center", withPadding && `py-4 md:py-8`, className)} {...props}>
       {children}
     </Comp>
   );

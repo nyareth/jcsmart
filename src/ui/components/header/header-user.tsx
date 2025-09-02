@@ -35,11 +35,7 @@ export function HeaderUserDropdown({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          className="relative overflow-hidden rounded-full"
-          size="icon"
-          variant="ghost"
-        >
+        <Button className="relative overflow-hidden rounded-full" size="icon" variant="ghost">
           <Avatar className="h-9 w-9">
             <AvatarImage
               alt={userName || "User"}
@@ -80,9 +76,7 @@ export function HeaderUserDropdown({
           </Avatar>
           <div className="flex flex-col space-y-0.5">
             <p className="text-sm font-medium">{userName || "User"}</p>
-            <p
-              className={"max-w-[160px] truncate text-xs text-muted-foreground"}
-            >
+            <p className={"max-w-[160px] truncate text-xs text-muted-foreground"}>
               {userEmail}
             </p>
           </div>
@@ -119,18 +113,10 @@ export function HeaderUserDropdown({
           </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem
-          asChild
-          className={cn(
-            "cursor-pointer",
-            isDashboard
-              ? "text-red-600"
-              : `
+        <DropdownMenuItem asChild className={cn("cursor-pointer", isDashboard ? "text-red-600" : `
                 txt-destructive
                 focus:text-destrctive
-              `,
-          )}
-        >
+              `)}>
           <Link href="/auth/sign-out">
             <LogOut className="mr-2 h-4 w-4" />
             Log out

@@ -68,7 +68,7 @@ export function Header({ showAuth = true }: HeaderProps) {
                     `
                       bg-gradient-to-r from-primary to-primary/70 bg-clip-text
                       tracking-tight text-transparent
-                    `,
+                    `
                 )}
               >
                 {SEO_CONFIG.name}
@@ -102,7 +102,7 @@ export function Header({ showAuth = true }: HeaderProps) {
                               `,
                               isActive
                                 ? "font-semibold text-primary"
-                                : "text-muted-foreground",
+                                : "text-muted-foreground"
                             )}
                             href={item.href}
                           >
@@ -208,7 +208,7 @@ export function Header({ showAuth = true }: HeaderProps) {
                           : `
                             text-foreground
                             hover:bg-muted/50 hover:text-primary
-                          `,
+                          `
                       )}
                       href={item.href}
                       key={item.name}

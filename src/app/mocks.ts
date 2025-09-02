@@ -48,24 +48,28 @@ export const featuredProductsHomepage = [
 // Categories for the shop by category section
 export const categories = [
   {
+    id: 5,
     image:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     name: "Audio",
     productCount: 12,
   },
   {
+    id: 6,
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     name: "Wearables",
     productCount: 8,
   },
   {
+    id: 4,
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     name: "Smartphones",
     productCount: 15,
   },
   {
+    id: 8,
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     name: "Laptops",
@@ -78,29 +82,29 @@ export const testimonials = [
   {
     author: {
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-      handle: "@sarahtechie",
-      name: "Sarah Johnson",
+        "https://lh3.googleusercontent.com/a-/ALV-UjWW6fx2DMwcUmWLXqI1BN8ErLc-pY_cLDJ4vFppMQB3MRkE26FF=w65-h65-p-rp-mo-br100",
+      handle: "@asuman",
+      name: "Asuman Haruna",
     },
-    text: "Honestly, I don't even remember how many times I've ordered from here. Never once had a bad experience. Stuff just works, and when I had a question, support was on it in like, five minutes.",
+    text: "I recently had the pleasure of working with JC Smart Technologies for my home automation needs, and I couldn't be more satisfied with the results. From start to finish, they demonstrated exceptional professionalism and dedication to quality..",
   },
   {
     author: {
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+        "https://lh3.googleusercontent.com/a-/ALV-UjUgF_cBOacA_EH_qg17CPtDVepBBm7RFVUZqCwOZDVUDgsNfSe1=w65-h65-p-rp-mo-br100",
       handle: "@mikedev",
-      name: "Michael Chen",
+      name: "Katusiime Rinet",
     },
-    text: "Wasn't expecting much tbh, but ended up being super impressed. Got a keyboard that feels chef's kiss and arrived faster than other stores. No complaints.",
+    text: "The best place to purchase  reputed brands of iPhones and laptops , battery life excellent.",
   },
   {
     author: {
       avatar:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+        "https://lh3.googleusercontent.com/a-/ALV-UjV4ZdYoOQFGj-my_DdW-dMqmxu8PoxjDQ1NrFKSF-cmofELaZKviA=w65-h65-p-rp-mo-br100",
       handle: "@emdigital",
-      name: "Emily Rodriguez",
+      name: "KUGUMISRIZA AMBROSE",
     },
-    text: "I was totally lost picking a laptop for freelance work. Dropped them a message and got a thoughtful reply within the hour. They didn't push the priciest option either, which I respect. Love what I got.",
+    text: "Best electronic devices. \n Good working PCs and smartphones \n I recommend it for all of you.",
   },
   {
     author: {

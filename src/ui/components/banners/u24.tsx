@@ -96,7 +96,6 @@ const United24Banner: React.FC<United24BannerProps> = ({
     });
     animations.push(buttonAnimation);
 
-    // Ukrainian flag color gradient animation
     if (animateGradient) {
       const gradientAnimation = animate(banner, {
         backgroundPosition: ["100% 50%", "0% 50%", "100% 50%"],
@@ -121,7 +120,7 @@ const United24Banner: React.FC<United24BannerProps> = ({
   if (!isVisible) return null;
 
   // Generate background classes or styles based on gradient animation and theme
-  const bannerClasses = `w-full border-b border-black/10 dark:border-white/10 relative z-50 overflow-hidden banner-gradient-bg rounded-none md:rounded-xl ${
+  const bannerClasses = `w-full border-b border-black/10 dark:border-white/10 relative z-50 overflow-hidden banner-gradient-bg rounded-none md:rounded-xl max-sm:hidden ${
     !animateGradient ? "bg-[#ffd700] dark:bg-[#0057b7]" : ""
   }`;
 
@@ -146,49 +145,33 @@ const United24Banner: React.FC<United24BannerProps> = ({
 
   return (
     <div
-      aria-label="Support Ukraine banner"
+      aria-label="Development mode banner"
       className={bannerClasses}
       ref={bannerRef}
       role="banner"
       style={backgroundStyle}
     >
       <div
-        className={`
-          container mx-auto flex flex-col items-center justify-between gap-4
-          px-4 py-4
-          md:flex-row md:gap-0
-        `}
+        className={`container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-4 md:flex-row md:gap-0`}
       >
         <div
-          className={`
-            banner-content mb-4 flex flex-col items-center gap-3
-            md:mb-0 md:flex-row md:gap-5
-          `}
+          className={`banner-content mb-4 flex flex-col items-center gap-3 md:mb-0 md:flex-row md:gap-5`}
         >
           <div
-            className={`
-              banner-logo relative mb-3 flex-shrink-0
-              md:mr-5 md:mb-0
-            `}
+            className={`banner-logo relative mb-3 flex-shrink-0 md:mr-5 md:mb-0`}
           >
             {/* Use Image component with different sources based on theme */}
             <Image
-              alt="United24 Logo"
-              className={`
-                block h-auto w-24 rounded-lg shadow
-                dark:hidden
-              `}
+              alt="Dummy Logo"
+              className={`block h-auto w-24 rounded-lg shadow dark:hidden`}
               height={48}
               priority
               src="/u24.svg"
               width={96}
             />
             <Image
-              alt="United24 Logo"
-              className={`
-                hidden h-auto w-24 rounded-lg shadow
-                dark:block
-              `}
+              alt="Dummy Logo"
+              className={`hidden h-auto w-24 rounded-lg shadow dark:block`}
               height={48}
               priority
               src="/u24_white.svg"
@@ -196,57 +179,37 @@ const United24Banner: React.FC<United24BannerProps> = ({
             />
           </div>
           <p
-            className={`
-              banner-content text-center text-base font-semibold
-              md:text-left
-              ${textColorClasses}
-            `}
+            className={`banner-content text-center text-base font-semibold md:text-left ${textColorClasses}`}
           >
-            School Store. Your school shopping list. Macbooks, iPads, Tablets and Mobile Phones. Available in the {" "}
+            This website is under development. Functionality and performance
+            first, then ui. Any bugs? {"   "}
             <Link
-              className={`
-                underline underline-offset-4 transition-colors duration-200
-                hover:text-[#0057b7]
-                dark:hover:text-[#ffd700]
-              `}
-              href="/products"
+              className={`underline underline-offset-4 transition-colors duration-200 hover:text-[#0057b7] dark:hover:text-[#ffd700]`}
+              href="mailto:nyarethmarko.3@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
             >
-              students section.
+              report now.
             </Link>{" "}
-            Shop now. Limited Offer
+            Thanks.
           </p>
         </div>
 
-        <div
-          className={`
-            banner-content flex items-center gap-2
-            md:gap-4
-          `}
-        >
+        <div className={`banner-content flex items-center gap-2 md:gap-4`}>
           <Link
             aria-label="Shop our school store"
             className={buttonClasses}
-            href="https://u24.gov.ua"
+            href="http://marko.vercel.app"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Shop
+            Dev
           </Link>
 
           {showCloseButton && (
             <button
-              aria-label="Close Ukraine support banner"
-              className={`
-                banner-content ml-2 rounded-full p-2 opacity-80
-                transition-opacity duration-200
-                focus:ring-opacity-50 focus:ring-2 focus:ring-current
-                focus:outline-none
-                hover:opacity-100
-                md:ml-4
-                ${textColorClasses}
-              `}
+              aria-label="Close Dev Mode Banner"
+              className={`banner-content ml-2 rounded-full p-2 opacity-80 transition-opacity duration-200 focus:ring-opacity-50 focus:ring-2 focus:ring-current focus:outline-none hover:opacity-100 md:ml-4 ${textColorClasses}`}
               onClick={handleClose}
               type="button"
             >

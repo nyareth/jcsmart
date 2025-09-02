@@ -30,7 +30,7 @@ export async function getCustomerByUserId(userId: string) {
  */
 export async function getCustomerState(userId: string) {
   const customer = await getCustomerByUserId(userId);
-  
+
   if (!customer) {
     return null;
   }
