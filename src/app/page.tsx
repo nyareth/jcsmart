@@ -150,7 +150,7 @@ export default function HomePage() {
                     </CardContent>
                   </Card>
 
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 max-sm:hidden">
                     <Card className="relative h-full overflow-hidden rounded-none">
                       <Image
                         src="/watch.png"
@@ -196,10 +196,6 @@ export default function HomePage() {
                   img: "/laptop.png",
                 },
                 {
-                  name: "Smart Phone",
-                  img: "/phone.png",
-                },
-                {
                   name: "Camera",
                   img: "/cctv.webp",
                 },
@@ -209,7 +205,7 @@ export default function HomePage() {
                 },
                 {
                   name: "Headphones",
-                  img: "/airpods.png",
+                  img: "/headphones.png",
                 },
                 {
                   name: "Speaker",

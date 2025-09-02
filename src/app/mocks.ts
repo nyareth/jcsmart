@@ -27,7 +27,7 @@ export const featuredProductsHomepage = [
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Smartphone Pro Max",
+    name: "iPhone 15 Pro Max",
     originalPrice: 1099.99,
     price: 999.99,
     rating: 4.8,
