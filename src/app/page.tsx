@@ -116,14 +116,17 @@ export default function HomePage() {
               {/* Search + Featured */}
               <main className="flex-1">
                 <div className="flex gap-2 mb-6">
-                  <select className="border dark:border-gray-800 bg-transparent rounded-lg px-3 py-2 text-sm">
-                    <option>Select a Category</option>
-                    <option>Computers</option>
-                    <option>Phones</option>
-                    <option>Accessories</option>
+                  <select
+                    aria-label="categories"
+                    className="border dark:border-gray-800 bg-transparent rounded-lg px-3 py-2 text-sm"
+                  >
+                    <option aria-label="Select">Select a Category</option>
+                    <option aria-label="Computers">Computers</option>
+                    <option aria-label="Phones">Phones</option>
+                    <option aria-label="Accessories">Accessories</option>
                   </select>
                   <Input placeholder="What do you need..." className="flex-1" />
-                  <Button>
+                  <Button aria-label="search button">
                     <Search className="w-4 h-4 mr-2" /> Search
                   </Button>
                 </div>
@@ -146,7 +149,9 @@ export default function HomePage() {
                       <p className="mt-2">
                         Price only <span className="font-semibold">$1,099</span>
                       </p>
-                      <Button className="mt-4 w-fit">Shop Now</Button>
+                      <Button className="mt-4 w-fit" aria-label="shop now">
+                        Shop Now
+                      </Button>
                     </CardContent>
                   </Card>
 

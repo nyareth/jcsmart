@@ -122,13 +122,18 @@ export function ProductCard({
             )}
 
             {/* Category badge */}
-            <Badge className={`absolute top-2 left-2 bg-background/80 backdrop-blur-sm`} variant="outline">
+            <Badge
+              className={`absolute top-2 left-2 bg-background/80 backdrop-blur-sm`}
+              variant="outline"
+            >
               {product.category}
             </Badge>
 
             {/* Discount badge */}
             {discount > 0 && (
-              <Badge className={`absolute top-2 right-2 bg-destructive text-destructive-foreground`}>
+              <Badge
+                className={`absolute top-2 right-2 bg-gray-900 text-red-500`}
+              >
                 {discount}% OFF
               </Badge>
             )}
@@ -158,7 +163,9 @@ export function ProductCard({
 
           <CardContent className="p-4 pt-4">
             {/* Product name with line clamp */}
-            <h3 className={`line-clamp-2 text-base font-medium transition-colors group-hover:text-primary`}>
+            <h3
+              className={`line-clamp-2 text-base font-medium transition-colors group-hover:text-primary`}
+            >
               {product.name}
             </h3>
 
@@ -190,7 +197,9 @@ export function ProductCard({
                 onClick={handleAddToCart}
               >
                 {isAddingToCart ? (
-                  <div className={`h-4 w-4 animate-spin rounded-full border-2 border-background border-t-transparent`} />
+                  <div
+                    className={`h-4 w-4 animate-spin rounded-full border-2 border-background border-t-transparent`}
+                  />
                 ) : (
                   <ShoppingCart className="h-4 w-4" />
                 )}
@@ -220,7 +229,9 @@ export function ProductCard({
                   variant="ghost"
                 >
                   {isAddingToCart ? (
-                    <div className={`h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent`} />
+                    <div
+                      className={`h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent`}
+                    />
                   ) : (
                     <ShoppingCart className="h-4 w-4" />
                   )}
@@ -231,7 +242,9 @@ export function ProductCard({
           )}
 
           {!product.inStock && (
-            <div className={`absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm`}>
+            <div
+              className={`absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm`}
+            >
               <Badge className="px-3 py-1 text-sm" variant="destructive">
                 Out of Stock
               </Badge>

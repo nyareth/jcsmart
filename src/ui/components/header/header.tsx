@@ -173,6 +173,7 @@ export function Header({ showAuth = true }: HeaderProps) {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               size="icon"
               variant="ghost"
+              aria-label="menu"
             >
               {mobileMenuOpen ? (
                 <X className="h-5 w-5" />

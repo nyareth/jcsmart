@@ -120,7 +120,7 @@ const United24Banner: React.FC<United24BannerProps> = ({
   if (!isVisible) return null;
 
   // Generate background classes or styles based on gradient animation and theme
-  const bannerClasses = `w-full border-b border-black/10 dark:border-white/10 relative z-50 overflow-hidden banner-gradient-bg rounded-none md:rounded-xl max-sm:hidden ${
+  const bannerClasses = `w-full border-b border-black/10 dark:border-white/10 relative  overflow-hidden banner-gradient-bg rounded-none md:rounded-xl max-sm:hidden ${
     !animateGradient ? "bg-[#ffd700] dark:bg-[#0057b7]" : ""
   }`;
 
