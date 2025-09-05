@@ -70,6 +70,38 @@
 | `bun db:auth`   | update auth-related tables     |
 | `bun db:studio` | open visual db editor          |
 
+## apple oauth integration
+
+relivator supports sign in with apple using better-auth. to enable apple login:
+
+### setup instructions
+
+1. **create an apple developer account** and set up sign in with apple
+2. **create a service id** in the apple developer portal:
+   - go to [apple developer portal](https://developer.apple.com/account/resources/identifiers/list/serviceId)
+   - create a new service id (this will be your `clientId`)
+   - configure the service id with your domain and redirect urls
+3. **generate a client secret**:
+   - create a private key associated with your app id
+   - use the private key to sign a jwt that acts as your `clientSecret`
+   - detailed instructions are in the [better-auth apple docs](https://www.better-auth.com/docs/authentication/apple)
+4. **configure environment variables** in your `.env` file:
+   ```
+   APPLE_CLIENT_ID=your.apple.service.id
+   APPLE_CLIENT_SECRET=your.apple.client.secret.jwt
+   # optional: for native ios apps
+   APPLE_APP_BUNDLE_IDENTIFIER=com.yourcompany.yourapp
+   ```
+5. **restart your development server** to load the new configuration
+
+### verification
+
+to verify apple login is working:
+1. navigate to `/auth/sign-in` or `/auth/sign-up`
+2. click the "apple" button
+3. complete the apple sign-in flow
+4. verify you're redirected back to your app and logged in
+
 ## polar integration
 
 relivator now integrates with [polar](https://polar.sh) for payment processing and subscription management.
